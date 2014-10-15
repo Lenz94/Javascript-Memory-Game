@@ -1,0 +1,19 @@
+/*design*/
+.mainContainer {
+background-size: 60%;
+background-position: 70% 10%;
+}
+.squaresContainer > div {
+width: 150px;
+height: 150px;
+padding: 5px 5px; 
+background-size: 160px;
+}
+.squaresContainer div img {
+width: 155px;
+height: 155px;
+}
+.button {
+width: 60%;
+font-size: 80%;
+}

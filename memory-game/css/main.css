@@ -1,0 +1,123 @@
+/*general*/
+body {
+font-family: Ayuthaya, arial;
+color: #FFFFFF;
+min-width: 320px;
+background-color: #000000;
+}
+a {
+color: #000000;
+}
+a:visited {
+color: #FFFFFF;
+}
+a:hover {
+color: #FF0000;
+}
+a:active {
+color: #000000;
+}
+h1 {
+font-size: 24px;
+}
+h2 {
+font-size: 16px;
+}
+h3 {
+font-size: 14px;
+}
+footer {
+width: 100%;
+height: 150px;
+padding-top: 25px;
+padding-bottom: 25px;
+}
+footer a{
+font: white;
+}
+/*design*/
+.mainContainer {
+width: 100%;
+height: 90%;
+padding-top: 5%;
+padding-bottom: 5%;
+float:left;
+background-color: #0066CC;
+background-image: url("../img/background.png");
+background-size: 50%;
+background-position: 80% 10%;
+background-repeat: no-repeat;
+}
+.spelContainer {
+width: 80%;
+height: 100%;
+margin-right: auto;
+margin-left: auto;
+}
+.rad1 {
+width: 100%;
+height: 100%;
+float:left;
+}
+.rad2 {
+width: 100%;
+height: 20px;
+float:left;
+}
+.rad3 {
+width: 100%;
+height: 100%;
+float:left;
+}
+.columnAlternativ {
+width: 50%;
+height: 40px;
+font-size:14px;
+text-align: center;
+float:left;
+}
+.columnSpeltid {
+width: 100%;
+height: 100%;
+padding-top: 4px;
+padding-bottom: 4px;
+float:left;
+}
+.button {
+width: 50%;
+height: 22px;
+padding-top: 4px;
+padding-bottom: 4px;
+cursor: pointer;
+-webkit-border-radius:20px;
+background-color: #000000;
+}
+.boardContainer { 
+width: 90%; 
+height: 90%;
+padding: 5% 5%;
+float:left;
+}   
+.squaresContainer {
+width: 100%; 
+height: 100%;
+float:left;
+margin-right: auto;
+margin-left: auto;
+}
+.squaresContainer > div {
+width: 180px;
+height: 180px;
+margin: 10px 10px;
+float:left;
+cursor: pointer;
+background-image: url("../img/square.png");
+background-size: 180px;
+background-repeat: no-repeat;
+}
+.squaresContainer div img {
+border: none;
+}
+.opacity {
+opacity: .8;
+}

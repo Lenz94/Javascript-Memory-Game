@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="sv">
+    <head>
+
+        <meta charset="utf-8"/>
+
+        <title>Memory Spel</title>
+
+        <!--css-->
+        <link rel="stylesheet" type="text/css" href="css/main.css"/>
+        <link rel="stylesheet" type="text/css" media="screen and (min-width: 481px) and (max-width: 800px)" href="css/tablet.css"/>
+        <link rel="stylesheet" type="text/css" media="screen and (min-width: 320px) and (max-width: 480px)" href="css/mobile.css"/>
+
+        <!--js plugins-->
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.8.2/jquery.min.js"></script>
+
+        <!--js code-->
+        <script src="js/spel.global.js"></script>
+        <script src="js/spel.ui.js"></script>
+        <script src="js/spel.logik.js"></script>
+        <script src="js/spel.spela.js"></script>   
+
+    </head>
+    <body>
+
+        <div class="mainContainer">
+
+            <div class="spelContainer">
+
+                <div class="rad1" id="titel">
+                    <h1><a href="http://sv.wikipedia.org/wiki/Komih%C3%A5g" target= "new">Komih&#229;g</a></h1>
+                </div><!--End of rad1 titel-->
+
+                <div class="rad1" id="beskrivning">
+                    Eller Memory, &#228;r ett enkelt kortspel som tr&#228;nar minnet. 
+                </div><!--End of rad1 beskrivning-->
+
+                <div class="rad2"></div><!--End of rad2-->
+
+                <div class="rad1" id="instruktioner">
+                    Ni m&#229;ste v&#228;lja varje omg&#229;ng mellan tv&#229; alternativ tills ni hittar alla par i spelet. Skynda p&#229; er... tiden g&#229;r!
+                </div><!--End of rad1 instruktioner-->
+
+                <div class="rad2"></div><!--End of rad2-->
+
+                <div class="rad1" id="alternativ">  
+
+                    <div class="columnAlternativ" id="start">
+                        <div class="button" id="buttonStart">
+                        Nytt spel
+                        </div><!--End of button buttonStart-->
+                    </div><!--End of columnAlternativ start-->
+
+                    <div class="columnAlternativ"></div><!--End of columnAlternativ-->
+
+                </div><!--End of rad1 alternativ-->
+
+                <div class="rad3"> 
+
+                    <div class="columnSpeltid" id="speltidCounter">
+                        <span id = "statistik" style= "color:black">
+                        Er statistik:
+                        </span><!--End of msgStatistik--><br/>
+                        <span id = "msgCounter">
+                        Klickat... <span id= "counter" style= "color:black">0</span> g&#229;nger.
+                        </span><!--End of msgCounter--><br/>
+                        <span id = "msgTimer"> 
+                        Speltid... <span id = "timer" style= "color:black">0</span> sekunder.
+                        </span><!--End of msgTimer-->
+                    </div><!--End of columnSpelTid speltidCounter-->
+
+                </div><!--End of rad3-->                
+
+                <div class="rad1" id="board">
+
+                    <div class="boardContainer"> 
+                        <div class="squaresContainer">
+                            <div id="img1"><img src="img/01.png" alt = "img1" />
+                            </div><!--End of square ett-->                           
+                            <div id="img2"><img src="img/02.png" alt = "img2" />
+                            </div><!--End of square tva-->                          
+                            <div id="img3"><img src="img/03.png" alt = "img3" />
+                            </div><!--End of square tree-->                           
+                            <div id="img4"><img src="img/04.png" alt = "img4" />
+                            </div><!--End of square fyra-->                           
+                            <div id="img5"><img src="img/05.png" alt = "img5" />
+                            </div><!--End of square fem-->                           
+                            <div id="img6"><img src="img/06.png" alt = "img6" />
+                            </div><!--End of square sex-->                           
+                            <div id="img7"><img src="img/07.png" alt = "img7" />
+                            </div><!--End of square sju-->                          
+                            <div id="img8"><img src="img/08.png" alt = "img8" />
+                            </div><!--End of square atta-->                           
+                            <div id="img9"><img src="img/09.png" alt = "img9" />
+                            </div><!--End of square nio-->                         
+                            <div id="img10"><img src="img/10.png" alt = "img10" />
+                            </div><!--End of square tio-->
+                            <div id="img11"><img src="img/01.png" alt = "img11" />
+                            </div><!--End of square elva-->                           
+                            <div id="img12"><img src="img/02.png" alt = "img12" />
+                            </div><!--End of square tolv-->                          
+                            <div id="img13"><img src="img/03.png" alt = "img13" />
+                            </div><!--End of square tretton-->                           
+                            <div id="img14"><img src="img/04.png" alt = "img14" />
+                            </div><!--End of square fjorton-->                           
+                            <div id="img15"><img src="img/05.png" alt = "img15" />
+                            </div><!--End of square femton-->                           
+                            <div id="img16"><img src="img/06.png" alt = "img16" />
+                            </div><!--End of square sexton-->                           
+                            <div id="img17"><img src="img/07.png" alt = "img17" />
+                            </div><!--End of square sjuton-->                          
+                            <div id="img18"><img src="img/08.png" alt = "img18" />
+                            </div><!--End of square arton-->                           
+                            <div id="img19"><img src="img/09.png" alt = "img19" />
+                            </div><!--End of square nitton-->                         
+                            <div id="img20"><img src="img/10.png" alt = "img20" />
+                            </div><!--End of square tjugo-->
+                        </div><!--End of squaresContainer-->   
+                    </div><!--End of boardContainer-->
+
+                </div><!--End of rad1 board-->
+
+                <div class="rad2"></div><!--End of rad2-->
+
+            </div><!--End of spelContainer-->
+
+        </div><!--End of mainContainer-->
+
+        <audio id = "fel">
+        <source src="audio/sound1.mp3" type="audio/mp3"/>
+        <source src="audio/sound1.wav" type="audio/wav"/>
+        </audio><!--End of audio fel-->
+
+        <audio id = "korrekt">
+        <source src="audio/sound2.mp3" type="audio/mp3"/>
+        <source src="audio/sound2.wav" type="audio/wav"/>
+        </audio><!--End of audio korrekt-->
+
+        <footer>
+
+            <div class="columnAlternativ" id = "lagmedlemmar">
+                Lagmedlemmar: Liliana Santiesteban, Enzo Marcani, Salvador Duenas
+            </div><!--End of columnAlternativ lagmedlemmar-->
+            <div class="columnAlternativ" id = "backToTop">
+                <a href = "#titel">till toppen</a>
+            </div><!--End of columnAlternativ backToTop-->
+            
+        </footer><!--End of footer-->
+
+    </body>
+</html>
